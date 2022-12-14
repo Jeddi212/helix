@@ -1,0 +1,21 @@
+[[language]]
+name = "crystal"
+scope = "source.crystal"
+injection-regex = "crystal"
+file-types = ["cr", "ecr"]
+roots = ["shard.yml", "shard.lock"]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'|' = '|'
+'"' = '"'
+'`' = '`'
+"'" = "'"
+
+[[grammar]]
+name = "crystal"
+source = { git = "https://github.com/will/tree-sitter-crystal", rev = "15597b307b18028b04d288561f9c29794621562b" }
